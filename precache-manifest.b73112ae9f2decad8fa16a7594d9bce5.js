@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "535ed9911d76f945575048bb29db946d",
+    "revision": "848838ae4964ef9910b94f91df140754",
     "url": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/index.html"
   },
   {
-    "revision": "1c3c93c9b578e6ab35be",
+    "revision": "37be7301ab4e163f0ab7",
     "url": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/css/main.54f9c368.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/js/2.688ae6b0.chunk.js"
   },
   {
-    "revision": "1c3c93c9b578e6ab35be",
-    "url": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/js/main.577ef5c8.chunk.js"
+    "revision": "37be7301ab4e163f0ab7",
+    "url": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/js/main.95f77d5e.chunk.js"
   },
   {
     "revision": "62bace3391c0c82c1116",
