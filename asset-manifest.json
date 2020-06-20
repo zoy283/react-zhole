@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/css/main.e52316e2.chunk.css",
-    "main.js": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/js/main.3cdf2a16.chunk.js",
-    "main.js.map": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/js/main.3cdf2a16.chunk.js.map",
+    "main.js": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/js/main.35403361.chunk.js",
+    "main.js.map": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/js/main.35403361.chunk.js.map",
     "runtime~main.js": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/js/runtime~main.a9c024a1.js",
     "runtime~main.js.map": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/js/runtime~main.a9c024a1.js.map",
     "static/js/2.688ae6b0.chunk.js": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/js/2.688ae6b0.chunk.js",
     "static/js/2.688ae6b0.chunk.js.map": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/js/2.688ae6b0.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.f079ea3f1cae2d1cf8f2843705c09ae6.js": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/precache-manifest.f079ea3f1cae2d1cf8f2843705c09ae6.js",
+    "precache-manifest.24c9d25b63d584e08f44ed8c57ec415d.js": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/precache-manifest.24c9d25b63d584e08f44ed8c57ec415d.js",
     "service-worker.js": "./service-worker.js",
     "static/css/main.e52316e2.chunk.css.map": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/css/main.e52316e2.chunk.css.map"
   }
