@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/css/main.e71d2e0f.chunk.css",
-    "main.js": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/js/main.fc644f40.chunk.js",
-    "main.js.map": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/js/main.fc644f40.chunk.js.map",
+    "main.css": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/css/main.f3484b48.chunk.css",
+    "main.js": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/js/main.820ca5e5.chunk.js",
+    "main.js.map": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/js/main.820ca5e5.chunk.js.map",
     "runtime~main.js": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/js/runtime~main.a9c024a1.js",
     "runtime~main.js.map": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/js/runtime~main.a9c024a1.js.map",
     "static/css/2.01da1c71.chunk.css": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/css/2.01da1c71.chunk.css",
     "static/js/2.8a1e8df3.chunk.js": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/js/2.8a1e8df3.chunk.js",
     "static/js/2.8a1e8df3.chunk.js.map": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/js/2.8a1e8df3.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.2d2981778b17bf9a70e29880966f4ef8.js": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/precache-manifest.2d2981778b17bf9a70e29880966f4ef8.js",
+    "precache-manifest.0fd0d97766ec1f713b7d4fe6ff31d1d5.js": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/precache-manifest.0fd0d97766ec1f713b7d4fe6ff31d1d5.js",
     "service-worker.js": "./service-worker.js",
     "static/css/2.01da1c71.chunk.css.map": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/css/2.01da1c71.chunk.css.map",
-    "static/css/main.e71d2e0f.chunk.css.map": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/css/main.e71d2e0f.chunk.css.map",
+    "static/css/main.f3484b48.chunk.css.map": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/css/main.f3484b48.chunk.css.map",
     "static/media/katex.min.css": "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/media/KaTeX_Typewriter-Regular.b2e94149.eot"
   }
 }
