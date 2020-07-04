@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/precache-manifest.64e4424b024a950237a9f757310a07a1.js"
+  "//cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/precache-manifest.e34cba5591d4c5ee1b8c6488e57e7fe6.js"
 );
 
 self.addEventListener('message', (event) => {
