@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "37b944323d6b7249d188b0f61215a9bb",
+    "revision": "968e8a8e90b10427648bf39ebe582746",
     "url": "./index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/css/2.b696d41f.chunk.css"
   },
   {
-    "revision": "418273a304139c49d53f",
+    "revision": "95bf3663f8b6ee8b86aa",
     "url": "https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/css/main.79dcf351.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/js/2.c92cdfa8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "418273a304139c49d53f",
-    "url": "https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/js/main.1172f75b.chunk.js"
+    "revision": "95bf3663f8b6ee8b86aa",
+    "url": "https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/js/main.39179e0b.chunk.js"
   },
   {
     "revision": "0bca4418057e96dc29ae",
