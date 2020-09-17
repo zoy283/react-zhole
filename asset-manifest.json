@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages-master/static/css/main.9772049c.chunk.css",
-    "main.js": "https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages-master/static/js/main.24120838.chunk.js",
-    "main.js.map": "https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages-master/static/js/main.24120838.chunk.js.map",
+    "main.css": "https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages-master/static/css/main.29345d93.chunk.css",
+    "main.js": "https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages-master/static/js/main.e1987403.chunk.js",
+    "main.js.map": "https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages-master/static/js/main.e1987403.chunk.js.map",
     "runtime-main.js": "https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages-master/static/js/runtime-main.4687ccd5.js",
     "runtime-main.js.map": "https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages-master/static/js/runtime-main.4687ccd5.js.map",
     "static/css/2.f2d92645.chunk.css": "https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages-master/static/css/2.f2d92645.chunk.css",
     "static/js/2.c92cdfa8.chunk.js": "https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages-master/static/js/2.c92cdfa8.chunk.js",
     "static/js/2.c92cdfa8.chunk.js.map": "https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages-master/static/js/2.c92cdfa8.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.9d5163256903666749b0befb52c31373.js": "https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages-master/precache-manifest.9d5163256903666749b0befb52c31373.js",
+    "precache-manifest.a6449e0c5a5b504995fa69a6e7dcfa72.js": "https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages-master/precache-manifest.a6449e0c5a5b504995fa69a6e7dcfa72.js",
     "service-worker.js": "./service-worker.js",
     "static/css/2.f2d92645.chunk.css.map": "https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages-master/static/css/2.f2d92645.chunk.css.map",
-    "static/css/main.9772049c.chunk.css.map": "https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages-master/static/css/main.9772049c.chunk.css.map",
+    "static/css/main.29345d93.chunk.css.map": "https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages-master/static/css/main.29345d93.chunk.css.map",
     "static/js/2.c92cdfa8.chunk.js.LICENSE.txt": "https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages-master/static/js/2.c92cdfa8.chunk.js.LICENSE.txt",
     "static/media/katex.min.css": "https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages-master/static/media/KaTeX_Typewriter-Regular.b2e94149.eot"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.4687ccd5.js",
     "static/css/2.f2d92645.chunk.css",
     "static/js/2.c92cdfa8.chunk.js",
-    "static/css/main.9772049c.chunk.css",
-    "static/js/main.24120838.chunk.js"
+    "static/css/main.29345d93.chunk.css",
+    "static/js/main.e1987403.chunk.js"
   ]
 }
