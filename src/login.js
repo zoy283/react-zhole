@@ -83,14 +83,18 @@ class LoginPopupSelf extends Component {
   async hashpassword(password) {
     let password_hashed = await this.sha256(password);
     password_hashed = await this.sha256(password_hashed);
-    password_hashed = encodeURIComponent(password_hashed);
     return password_hashed;
   }
 
   verify_email() {
     const old_token = new URL(location.href).searchParams.get('old_token');
-    const email = encodeURIComponent(this.ref.username.current.value);
+    const email = this.ref.username.current.value;
     // VALIDATE EMAIL IN FRONT-END HERE
+    const body = new URLSearchParams();
+    Object.entries({
+      email,
+      old_token
+    }).forEach(param => body.append(...param));
     this.setState(
       {
         loading_status: 'loading',
@@ -101,16 +105,13 @@ class LoginPopupSelf extends Component {
           'security/login/check_email?' +
           API_VERSION_PARAM(), {
           method: 'POST',
-          body: JSON.stringify({
-            email,
-            old_token
-          }),
+          body,
         },
         )
           .then((res) => res.json())
           .then((json) => {
             // COMMENT NEXT LINE
-            //json.code = 2;
+            json.code = 2;
             if (json.code < 0) throw new Error(json.msg);
             this.setState({
               loading_status: 'done',
@@ -143,9 +144,7 @@ class LoginPopupSelf extends Component {
             headers: {
               'Content-Type': 'application/json',
             },
-            body: JSON.stringify({
-              excluded_scopes: [],
-            }),
+            body: '',
           },
         )
           .then(get_json)
@@ -175,10 +174,18 @@ class LoginPopupSelf extends Component {
 
   async new_user_registration() {
     if (this.valid_registration() !== 0) return;
-    const email = encodeURIComponent(this.ref.username.current.value);
-    const valid_code = encodeURIComponent(this.ref.email_verification.current.value);
+    const email = this.ref.username.current.value;
+    const valid_code = this.ref.email_verification.current.value;
     const password = this.ref.password.current.value;
     let password_hashed = await this.hashpassword(password);
+    const body = new URLSearchParams();
+    Object.entries({
+      email,
+      password_hashed,
+      device_type: 0,
+      device_info: navigator.userAgent,
+      valid_code
+    }).forEach(param => body.append(...param));
     this.setState(
       {
         loading_status: 'loading',
@@ -193,13 +200,7 @@ class LoginPopupSelf extends Component {
             headers: {
               'Content-Type': 'application/json',
             },
-            body: JSON.stringify({
-              email,
-              password_hashed,
-              device_type: 0,
-              device_info: navigator.userAgent,
-              valid_code
-            }),
+            body,
           },
         )
           .then(get_json)
@@ -229,10 +230,18 @@ class LoginPopupSelf extends Component {
 
   async old_user_registration() {
     if (this.valid_registration() !== 0) return;
-    const email = encodeURIComponent(this.ref.username.current.value);
+    const email = this.ref.username.current.value;
     const old_token = new URL(location.href).searchParams.get('old_token');
     const password = this.ref.password.current.value;
     let password_hashed = await this.hashpassword(password);
+    const body = new URLSearchParams();
+    Object.entries({
+      email,
+      password_hashed,
+      device_type: 0,
+      device_info: navigator.userAgent,
+      old_token
+    }).forEach(param => body.append(...param));
     this.setState(
       {
         loading_status: 'loading',
@@ -247,13 +256,7 @@ class LoginPopupSelf extends Component {
             headers: {
               'Content-Type': 'application/json',
             },
-            body: JSON.stringify({
-              email,
-              password_hashed,
-              device_type: 0,
-              device_info: navigator.userAgent,
-              old_token
-            }),
+            body,
           },
         )
           .then(get_json)
@@ -313,9 +316,7 @@ class LoginPopupSelf extends Component {
             headers: {
               'Content-Type': 'application/json',
             },
-            body: JSON.stringify({
-              excluded_scopes: [],
-            }),
+            body: '',
           },
         )
           .then(get_json)
