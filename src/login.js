@@ -16,6 +16,8 @@ import {
 } from 'react-google-recaptcha-v3';
 import ReCAPTCHA from 'react-google-recaptcha';
 
+import UAParser from 'ua-parser-js';
+
 const LOGIN_POPUP_ANCHOR_ID = 'pkuhelper_login_popup_anchor';
 
 class LoginPopupSelf extends Component {
@@ -179,12 +181,13 @@ class LoginPopupSelf extends Component {
     const valid_code = this.ref.email_verification.current.value;
     const password = this.ref.password.current.value;
     let password_hashed = await this.hashpassword(password);
+    const device_info = UAParser(navigator.userAgent).browser.name;
     const body = new URLSearchParams();
     Object.entries({
       email,
       password_hashed,
       device_type: 0,
-      device_info: navigator.userAgent,
+      device_info,
       valid_code
     }).forEach(param => body.append(...param));
     this.setState(
@@ -232,12 +235,13 @@ class LoginPopupSelf extends Component {
     const old_token = new URL(location.href).searchParams.get('old_token');
     const password = this.ref.password.current.value;
     let password_hashed = await this.hashpassword(password);
+    const device_info = UAParser(navigator.userAgent).browser.name;
     const body = new URLSearchParams();
     Object.entries({
       email,
       password_hashed,
       device_type: 0,
-      device_info: navigator.userAgent,
+      device_info,
       old_token
     }).forEach(param => body.append(...param));
     this.setState(
