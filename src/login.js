@@ -145,9 +145,6 @@ class LoginPopupSelf extends Component {
           API_VERSION_PARAM(),
           {
             method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
             body: '',
           },
         )
@@ -201,9 +198,6 @@ class LoginPopupSelf extends Component {
           API_VERSION_PARAM(),
           {
             method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
             body,
           },
         )
@@ -257,9 +251,6 @@ class LoginPopupSelf extends Component {
           API_VERSION_PARAM(),
           {
             method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
             body,
           },
         )
