@@ -89,11 +89,15 @@ class LoginPopupSelf extends Component {
   verify_email() {
     const old_token = new URL(location.href).searchParams.get('old_token');
     const email = this.ref.username.current.value;
+    const recaptcha_version = 'v3';
+    const recaptcha_token = localStorage['recaptcha'];
     // VALIDATE EMAIL IN FRONT-END HERE
     const body = new URLSearchParams();
     Object.entries({
       email,
-      old_token
+      old_token,
+      recaptcha_version,
+      recaptcha_token
     }).forEach(param => body.append(...param));
     this.setState(
       {
@@ -111,7 +115,7 @@ class LoginPopupSelf extends Component {
           .then((res) => res.json())
           .then((json) => {
             // COMMENT NEXT LINE
-            json.code = 2;
+            //json.code = 2;
             if (json.code < 0) throw new Error(json.msg);
             this.setState({
               loading_status: 'done',
@@ -288,66 +292,6 @@ class LoginPopupSelf extends Component {
     console.log(3);
   }
 
-  do_sendcode(type, do_popup, recaptcha_version) {
-    if (!this.state.recaptcha_verified) {
-      alert('reCAPTCHA风控系统正在评估您的浏览器安全状态，请稍后重试。');
-      return;
-    }
-
-    this.setState(
-      {
-        loading_status: 'loading',
-      },
-      () => {
-        fetch(
-          API_ROOT +
-          'security/login/send_code' +
-          '?user=' +
-          encodeURIComponent(this.ref.username.current.value) +
-          '&code_type=' +
-          encodeURIComponent(type) +
-          '&recaptcha_version=' +
-          encodeURIComponent(recaptcha_version) +
-          '&recaptcha_token=' +
-          localStorage['recaptcha'] +
-          API_VERSION_PARAM(),
-          {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: '',
-          },
-        )
-          .then(get_json)
-          .then((json) => {
-            console.log(json);
-            if (!json.success) throw new Error(JSON.stringify(json));
-
-            alert(json.msg);
-            this.setState({
-              loading_status: 'done',
-            });
-          })
-          .catch((e) => {
-            console.error(e);
-
-            if (e.toString().includes('风控系统校验失败')) {
-              this.setState({
-                loading_status: 'done',
-              });
-              do_popup();
-            } else {
-              alert('发送失败\n' + e);
-              this.setState({
-                loading_status: 'done',
-              });
-            }
-          });
-      },
-    );
-  }
-
   render() {
     window.recaptchaOptions = {
       useRecaptchaNet: true,
@@ -357,17 +301,6 @@ class LoginPopupSelf extends Component {
         reCaptchaKey={process.env.REACT_APP_RECAPTCHA_V3_KEY}
         useRecaptchaNet={true}
       >
-        {!this.state.recaptcha_verified && (
-          <GoogleReCaptcha
-            onVerify={(token) => {
-              this.setState({
-                recaptcha_verified: true,
-              });
-              console.log(token);
-              localStorage['recaptcha'] = token;
-            }}
-          />
-        )}
         <div>
           <div className="treehollow-login-popup-shadow" />
           <div className="treehollow-login-popup">
@@ -474,15 +407,18 @@ class LoginPopupSelf extends Component {
                   <b>输入验证码 {process.env.REACT_APP_TITLE}</b>
                 </p>
                 <p>
-                  <label>
-                    邮箱&nbsp;
-                    <input
-                      ref={this.ref.username}
-                      type="email"
-                      autoFocus={true}
-                      defaultValue="@mails.tsinghua.edu.cn"
+                  {!this.state.recaptcha_verified && (
+                    <GoogleReCaptcha
+                      onVerify={(token) => {
+                        this.setState({
+                          recaptcha_verified: true,
+                        });
+                        console.log(token);
+                        localStorage['recaptcha'] = token;
+                        this.verify_email();
+                      }}
                     />
-                  </label>
+                  )}
                 </p>
               </>)}
             <p>
