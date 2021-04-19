@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "https://cdn.jsdelivr.net/gh/treehollow/webhole@gh-pages-master/static/css/main.f70f5a9a.chunk.css",
-    "main.js": "https://cdn.jsdelivr.net/gh/treehollow/webhole@gh-pages-master/static/js/main.c46d1c0c.chunk.js",
-    "main.js.map": "https://cdn.jsdelivr.net/gh/treehollow/webhole@gh-pages-master/static/js/main.c46d1c0c.chunk.js.map",
+    "main.js": "https://cdn.jsdelivr.net/gh/treehollow/webhole@gh-pages-master/static/js/main.802ab87e.chunk.js",
+    "main.js.map": "https://cdn.jsdelivr.net/gh/treehollow/webhole@gh-pages-master/static/js/main.802ab87e.chunk.js.map",
     "runtime-main.js": "https://cdn.jsdelivr.net/gh/treehollow/webhole@gh-pages-master/static/js/runtime-main.b232924e.js",
     "runtime-main.js.map": "https://cdn.jsdelivr.net/gh/treehollow/webhole@gh-pages-master/static/js/runtime-main.b232924e.js.map",
     "static/css/2.53e30839.chunk.css": "https://cdn.jsdelivr.net/gh/treehollow/webhole@gh-pages-master/static/css/2.53e30839.chunk.css",
     "static/js/2.3fd44766.chunk.js": "https://cdn.jsdelivr.net/gh/treehollow/webhole@gh-pages-master/static/js/2.3fd44766.chunk.js",
     "static/js/2.3fd44766.chunk.js.map": "https://cdn.jsdelivr.net/gh/treehollow/webhole@gh-pages-master/static/js/2.3fd44766.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.da2015787e177cb69541de57a85b358d.js": "https://cdn.jsdelivr.net/gh/treehollow/webhole@gh-pages-master/precache-manifest.da2015787e177cb69541de57a85b358d.js",
+    "precache-manifest.005ef105fac7352c56a71baf612aae4d.js": "https://cdn.jsdelivr.net/gh/treehollow/webhole@gh-pages-master/precache-manifest.005ef105fac7352c56a71baf612aae4d.js",
     "service-worker.js": "./service-worker.js",
     "static/css/2.53e30839.chunk.css.map": "https://cdn.jsdelivr.net/gh/treehollow/webhole@gh-pages-master/static/css/2.53e30839.chunk.css.map",
     "static/css/main.f70f5a9a.chunk.css.map": "https://cdn.jsdelivr.net/gh/treehollow/webhole@gh-pages-master/static/css/main.f70f5a9a.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.53e30839.chunk.css",
     "static/js/2.3fd44766.chunk.js",
     "static/css/main.f70f5a9a.chunk.css",
-    "static/js/main.c46d1c0c.chunk.js"
+    "static/js/main.802ab87e.chunk.js"
   ]
 }
