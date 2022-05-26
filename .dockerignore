@@ -1,5 +1,5 @@
-node_modules
-build
-.github
-.git
-.gitingnore
+/node_modules
+/build
+/.git*
+/*.sh
+/*.md
