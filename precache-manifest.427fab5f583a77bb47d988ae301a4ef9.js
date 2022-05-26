@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6db757f698f977f1cdd50319ed504979",
+    "revision": "105cca67194950ced1f8631f54881a29",
     "url": "./index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://cdn.jsdelivr.net/gh/zoy283/react-zhole@gh-pages-master/static/css/2.b0a28c77.chunk.css"
   },
   {
-    "revision": "d7f6c3fb1556aa8e0689",
+    "revision": "76089a2470937fe80b2a",
     "url": "https://cdn.jsdelivr.net/gh/zoy283/react-zhole@gh-pages-master/static/css/main.f70f5a9a.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://cdn.jsdelivr.net/gh/zoy283/react-zhole@gh-pages-master/static/js/2.9725b2a7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d7f6c3fb1556aa8e0689",
-    "url": "https://cdn.jsdelivr.net/gh/zoy283/react-zhole@gh-pages-master/static/js/main.3263c175.chunk.js"
+    "revision": "76089a2470937fe80b2a",
+    "url": "https://cdn.jsdelivr.net/gh/zoy283/react-zhole@gh-pages-master/static/js/main.fbf98fc8.chunk.js"
   },
   {
     "revision": "583c7e6327c26f529e48",
